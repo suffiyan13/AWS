@@ -1,0 +1,35 @@
+
+ STEPS TO CREATE A VPC in AWS:
+
+1. Create a VPC
+Step 1: Go to the VPC Dashboard and choose Create VPC.
+Step 2: Select VPC only.
+Step 3: Provide the CIDR block (e.g., 10.0.0.0/16), then click Create.
+
+2. Enable DNS Features
+Step 1: After creating the VPC, go to VPC Actions.
+Step 2: Tick the options:
+Enable DNS resolution.
+Enable DNS hostnames.
+Step 3: Save changes.
+
+3. Create Subnets in Different Availability Zones
+Step 1: Choose the VPC you created earlier.
+Step 2: Click Create Subnet.
+Step 3: Assign the subnets to different Availability Zones.
+Step 4: Make sure the IPv4 CIDR block for each subnet falls under the VPC CIDR block (e.g., 10.0.1.0/24, 10.0.2.0/24).
+
+4. Create an Internet Gateway (IGW)
+Step 1: Go to Internet Gateways and click Create IGW.
+Step 2: Attach the IGW to your VPC to enable internet access.
+
+5. Set Up Route Tables
+Step 1: Go to Route Tables and select the VPC.
+Step 2: Add a route to allow traffic (e.g., 0.0.0.0/0 for internet access).
+Step 3: Associate the subnets to this route table.
+Step 4: Ensure only trusted sources have access by configuring the routing and security rules.
+
+Helpful Tool:
+Use the (https://jodies.de/ipcalc) IP Calculator to calculate and verify your CIDR ranges.
+
+This simple guide should help you create a VPC with subnets, enable DNS features, and set up internet access securely!
