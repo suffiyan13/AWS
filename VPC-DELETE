@@ -1,0 +1,25 @@
+STEPS TO DELETE A VPC in AWS:
+
+1. Delete Subnets
+Step 1: Go to VPC Dashboard and select Subnets.
+Step 2: Choose each subnet created under the VPC.
+Step 3: Click Actions > Delete Subnet, confirm the deletion.
+
+2. Detach and Delete the Internet Gateway (IGW)
+Step 1: Go to Internet Gateways.
+Step 2: Find the IGW attached to the VPC.
+Step 3: Click Actions > Detach from VPC.
+Step 4: After detaching, select the IGW again and click Actions > Delete Internet Gateway.
+
+3. Delete Route Tables
+Step 1: Go to Route Tables.
+Step 2: Select the route table associated with the VPC.
+Step 3: Click Actions > Delete Route Table, confirm the deletion.
+
+4. Delete the VPC
+Step 1: Go to Your VPCs under the VPC Dashboard.
+Step 2: Select the VPC you created.
+Step 3: Click Actions > Delete VPC, confirm the deletion.
+
+5. Verify All Resources are Deleted
+Ensure that all subnets, route tables, internet gateways, and the VPC itself have been successfully removed.
